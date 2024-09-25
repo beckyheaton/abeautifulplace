@@ -1,0 +1,58 @@
+/* General Reset: This removes default margin, padding, and sets box-sizing to avoid layout inconsistencies */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the body element */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the page */
+    background-color: #f0f0f0; /* Sets a light grey background color */
+    color: #333; /* Sets text color to a dark grey */
+    line-height: 1.6; /* Increases the space between lines for readability */
+}
+
+/* Styling for the header */
+header {
+    background-color: #4CAF50; /* A green background color */
+    color: white; /* White text color */
+    padding: 1rem; /* Adds padding around the text */
+    text-align: center; /* Centers the header text */
+}
+
+/* Styling for the main content */
+main {
+    margin: 20px; /* Adds space around the main content */
+}
+
+/* Styling for the introduction section's image */
+#introduction img {
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px; /* Adds padding inside the button for a larger clickable area */
+    background-color: #4CAF50; /* Sets the button background to green */
+    color: white; /* White text */
+    border: none; /* Removes the border around the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Changes button color when hovered over */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Centers the footer text */
+    padding: 1rem; /* Adds padding inside the footer */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    position: absolute; /* Positions the footer at the bottom of the page */
+    bottom: 0;
+    width: 100%; /* Makes sure the footer stretches across the full width of the page */
+}
