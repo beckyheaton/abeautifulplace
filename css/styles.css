@@ -5,53 +5,69 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("../assets/fonts/OpenSans-Regular.ttf") format("opentype");
+}
+
 /* Basic styles for the body element */
 body {
-    font-family: Arial, sans-serif; /* Sets the font for the page */
-    background-color: #f0f0f0; /* Sets a light grey background color */
-    color: #333; /* Sets text color to a dark grey */
-    line-height: 1.6; /* Increases the space between lines for readability */
+    font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 30px; /* Increases the space between lines for readability */
+    color: darkolivegreen; /* Sets text color*/
+    text-transform: lowercase;
+    background-color: wheat; /* Sets background color */
 }
 
 /* Styling for the header */
 header {
-    background-color: #4CAF50; /* A green background color */
-    color: white; /* White text color */
-    padding: 1rem; /* Adds padding around the text */
     text-align: center; /* Centers the header text */
+    font-weight: normal;
+    padding: 30px 0; /* The first value is for the top and bottom, and the second is for the left and right. px (pixels) is a unit that is independent of the element size. */
 }
 
-/* Styling for the main content */
-main {
-    margin: 20px; /* Adds space around the main content */
+h1 {
+    font-weight: normal;
 }
 
-/* Styling for the introduction section's image */
-#introduction img {
-    max-width: 100%; /* Ensures the image doesn't overflow its container */
-    height: auto; /* Maintains the aspect ratio of the image */
+/* Welcome Message */
+#welcomeMessage {
+    position: fixed;
+    padding: 30px 30px;
+    top: 0;
+    left: 0;
+    font-size:5pt;
+    line-height: 10px;
+    text-align: left;
+    /* transform: translateX(-50%); Shift the container left by 50% of its own width */
 }
 
-/* Button styling */
-button {
-    padding: 10px 20px; /* Adds padding inside the button for a larger clickable area */
-    background-color: #4CAF50; /* Sets the button background to green */
-    color: white; /* White text */
-    border: none; /* Removes the border around the button */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+#thisHasntHappened {
+    position: absolute;
+    padding: 2em;
+    font-style: italic;
+    cursor: pointer;
+    -webkit-user-select: none;  /* Chrome, Safari, and Opera */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+    user-select: none;          /* Non-prefixed version for modern browsers */
 }
 
-/* Button hover effect */
-button:hover {
-    background-color: #45a049; /* Changes button color when hovered over */
+/* Kelp Image */
+#kelp {
+    position: absolute; /* Position relative to viewport */
+    width: 400px; /* Change width */
+    height: auto; /* Preserve the aspect ratio */
+    bottom: 10%; 
+    left: 17%; 
 }
 
 /* Footer styling */
 footer {
     text-align: center; /* Centers the footer text */
     padding: 1rem; /* Adds padding inside the footer */
-    background-color: #333; /* Dark background */
-    color: white; /* White text */
     position: absolute; /* Positions the footer at the bottom of the page */
     bottom: 0;
     width: 100%; /* Makes sure the footer stretches across the full width of the page */
